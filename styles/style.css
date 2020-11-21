@@ -15,18 +15,8 @@
   color: #2f80ed;
 }
 
-.link a:visited {
+.link:visited {
   color: #2f80ed;
-}
-
-li {
-    list-style-type: none;
-    margin: 0 0;
-}
-
-ul {
-    margin-left: 0;
-    padding-left: 0; 
 }
 
 .header {
@@ -61,16 +51,21 @@ ul {
   z-index: 3;
 }
 
+.header__link {
+
+}
+
 .logo {
+  display: flex;
   width: 183px;
   height: 32px;
-  background-image: url(file:///C:/Users/Acer/Desktop/dev/how-to-learn/images/logo_place_header.svg);
 }
 
 .logo_place_header {
   position: absolute;
   left: 64px;
   top: 30px;
+  background-image: url(../images/logo_place_header.svg);
 }
 
 .header__main-illustration {
@@ -124,9 +119,6 @@ ul {
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
-}
-
-.two-cloumns__paragraph_middle {
   margin: 30px 0;
 }
 
@@ -149,7 +141,7 @@ ul {
   font-weight: 600;
 }
 
-.digits-subtitle {
+.section-subtitle {
   margin: auto;
   width: 60%;
   text-align: center;
@@ -187,11 +179,12 @@ ul {
 }
 
 .feynman {
-  height: 890px;
+  min-height: 790px;
   background-color: #f2f2f2;
   display: flex;
   position: relative;
   flex-direction: column;
+  margin-top: 100px;
 }
 
 .feynman__portret-place {
@@ -207,21 +200,24 @@ ul {
   z-index: 3;
 }
 
-.text-area__title {
+.feynman__title {
   margin: 0 auto 70px;
+  margin-top: 100px;
   width: 648px;
   line-height: 1.15;
   font-size: 120px;
   font-weight: 600;
   text-align: center;
+  z-index: 2;
 }
 
-.text-area__subtitle {
+.feynman__subtitle {
   margin: 0 auto;
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
   text-align: center;
+  z-index: 2;
 }
 
 .feynman__link {
@@ -231,18 +227,21 @@ ul {
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
+  text-decoration: none;
+  z-index: 3;
+  color: #2f80ed;
 }
 
 .kaufman {
   position: relative;
   display: flex;
   flex-direction: column;
-  background-color: #000;
+  background-color: #1f1f1f;
   color: #fff;
   overflow: hidden;
 }
 
-.section-title_theme_dark {
+.kaufman-title_theme_dark {
   margin: 90px auto 20px;
   width: 60%;
   text-align: center;
@@ -251,7 +250,7 @@ ul {
   font-weight: 600;
 }
 
-.section-subtitle_theme_dark {
+.kaufman-subtitle_theme_dark {
   margin: 0 auto;
   width: 60%;
   text-align: center;
@@ -260,29 +259,33 @@ ul {
   font-weight: normal;
 }
 
-.table_theme_dark {
+.kaufman_theme_dark {
   margin: 0 auto 90px;
   z-index: 3;
 }
 
-.table__flex-row_theme_dark {
+.kaufman__flex-row_theme_dark {
   margin: 80px auto 0;
   display: flex;
   justify-content: space-between;
 }
 
-.table__cell_theme_dark {
+.kaufman__cell_theme_dark {
   width: 200px;
   margin-right: 20px;
 }
 
-.table__heading_theme_dark {
+.kaufman__cell_theme_dark:last-child {
+  margin-right: 0px;
+}
+
+.kaufman__heading_theme_dark {
   line-height: 1.15;
   font-size: 24px;
   font-weight: 600;
 }
 
-.table__text_theme_dark {
+.kaufman__text_theme_dark {
   margin-top: 20px;
   line-height: 1.2;
   font-size: 18px;
@@ -299,13 +302,15 @@ ul {
   right: -210px;
   width: 877px;
   height: 877px;
-  background-image: url(file:///C:/Users/Acer/Desktop/dev/how-to-learn/images/kaufman-triangle.svg);
+  background-image: url(../images/kaufman-triangle.svg);
+  background-size: auto;
   z-index: 2;
 }
 
 .footer {
+  min-height: 350px;
   display: flex;
-  background-color: #000;
+  background-color: #1f1f1f;
   color: #fff;
 }
 
@@ -317,16 +322,34 @@ ul {
   display: flex;
 }
 
-.logo_place_footer {
-  background-image: url(file:///C:/Users/Acer/Desktop/dev/how-to-learn/images/logo_place_footer.svg);
-}
-
-.footer__column_content_copyright {
-  flex-basis: 711px;
+.footer__column {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
+}
+
+.footer__content_copyright {
+  flex-basis: 711px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer__content_info {
+
+}
+
+.footer__content_social {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+}
+
+.logo_place_footer {
+  background-image: url(../images/logo_place_footer.svg);
+  z-index: 3;
+  padding-right: 1px; /*добавление padding необходимо для корректного отображения изображения*/
 }
 
 .footer__author {
@@ -337,34 +360,43 @@ ul {
 }
 
 .footer__column-links {
-  margin: 20px 0 16px;
   display: flex;
+  margin: 20px 0 16px;
   flex-direction: column;
+  padding-left: 0;
 }
 
-.footer__column_info {
-
-}
-
-.footer__column_social {
-
-}
-
-.footer__column-heading {
-  line-height: 30px;
-  font-size: 18px;
-  font-weight: 600;
-}
-
-.footer__column_link-details {
+.footer__column_link {
+  display: flex;
+  align-items: center;
   color: #fff;
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
+  text-decoration: none;
+}
+
+.footer__column_link:visited {
+  color: white;
+}
+
+.footer__column-heading {
+  margin: 0;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .footer__link-icon {
   height: 16px;
   width: 16px;
   padding-right: 10px;
+}
+
+.footer__link-text {
+  margin: 0;
+}
+
+.footer_list-style-type_none {
+  list-style-type: none;
 }
