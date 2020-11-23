@@ -284,14 +284,10 @@
   z-index: 3;
 }
 
-.table__flex-row {
+.table__flex-row_theme_dark {
   margin: 80px auto 0;
   display: flex;
   justify-content: space-between;
-}
-
-.table__flex-row_theme_dark {
-  margin-top: 80px;
 }
 
 .table__cell_theme_dark {
@@ -302,14 +298,10 @@
   margin-right: 0px;
 }
 
-.table__heading {
-  line-height: 1.15;
+.table__heading_theme_dark {
+    line-height: 1.15;
   font-size: 24px;
   font-weight: 700;
-}
-
-.table__heading_theme_dark {
-
 }
 
 .kaufman__text {
