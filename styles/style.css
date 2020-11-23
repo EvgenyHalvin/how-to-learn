@@ -134,7 +134,6 @@
 
 .two-columns__span-accent {
   font-weight: bold;
-  font-weight: bold;
   font-weight: 700;
 }
 
@@ -280,13 +279,9 @@
   font-weight: normal;
 }
 
-.table {
+.table_theme_dark {
   margin: 0 auto 90px;
   z-index: 3;
-}
-
-.table_theme_dark {
-  
 }
 
 .table__flex-row {
