@@ -36,11 +36,12 @@
   width: 730px;
   line-height: 96px;
   font-size: 102px;
-  font-weight: 600;
+  font-weight: 700;
   z-index: 3;
 }
 
 .header__subtitle {
+  margin: 0;
   width: 388px;
   position: absolute;
   left: 64px;
@@ -52,7 +53,9 @@
 }
 
 .header__link {
-
+  text-decoration: none;
+  z-index: 3;
+  color: #2f80ed;
 }
 
 .logo {
@@ -95,35 +98,42 @@
   margin: 100px auto 0;
 }
 
-.two-cloumns {
+.two-columns {
   width: 80%;
   margin: auto;
   justify-content: space-between;
   display: flex;
 }
 
-.two-cloumns__brief {
+.two-columns__brief {
   width: 175px;
   color: #2f80ed;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
+  margin: 0 20px 0 0;  /* отсутп для корректного отображения при масштабировании (чтобы не прижимался к блоку справа)*/
 }
 
-.two-cloumns__main-text {
+.two-columns__main-text {
   width: 80%;
   min-width: 784px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.two-cloumns__paragraph{
+.two-columns__paragraph{
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
-  margin: 30px 0;
+  margin: 0 0 30px 0;
+}
+.two-columns__paragraph:last-child {
+  margin-bottom: 0px;
 }
 
-.two-cloumns__span-accent {
-  font-weight: 800;
+.two-columns__span-accent {
+  font-weight: 700;
 }
 
 .digits {
@@ -138,7 +148,7 @@
   text-align: center;
   line-height: 1.15;
   font-size: 60px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .section-subtitle {
@@ -166,13 +176,14 @@
 }
 
 .table__heading {
+  margin: 0;
   line-height: 1.15;
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .table__text {
-  margin-top: 20px;
+  margin: 20px 0 0 0;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
@@ -206,7 +217,7 @@
   width: 648px;
   line-height: 1.15;
   font-size: 120px;
-  font-weight: 600;
+  font-weight: 700;
   text-align: center;
   z-index: 2;
 }
@@ -241,13 +252,21 @@
   overflow: hidden;
 }
 
+.kaufman-title {
+  z-index: 3;
+}
+
 .kaufman-title_theme_dark {
   margin: 90px auto 20px;
   width: 60%;
   text-align: center;
   line-height: 1.15;
   font-size: 60px;
-  font-weight: 600;
+  font-weight: 700;
+}
+
+.kaufman-subtitle {
+  z-index: 3;
 }
 
 .kaufman-subtitle_theme_dark {
@@ -259,37 +278,56 @@
   font-weight: normal;
 }
 
-.kaufman_theme_dark {
+.table {
   margin: 0 auto 90px;
   z-index: 3;
 }
 
-.kaufman__flex-row_theme_dark {
+.table_theme_dark {
+  
+}
+
+.table__flex-row {
   margin: 80px auto 0;
   display: flex;
   justify-content: space-between;
 }
 
-.kaufman__cell_theme_dark {
-  width: 200px;
-  margin-right: 20px;
+.table__flex-row_theme_dark {
+
 }
 
-.kaufman__cell_theme_dark:last-child {
+.table__cell {
+  width: 200px;
+}
+
+.table__cell_theme_dark {
+
+}
+
+.table__cell:last-child {
   margin-right: 0px;
 }
 
-.kaufman__heading_theme_dark {
+.table__heading {
   line-height: 1.15;
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
-.kaufman__text_theme_dark {
+.table__heading_theme_dark {
+
+}
+
+.kaufman__text {
   margin-top: 20px;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
+}
+
+.kaufman__text_theme_dark {
+
 }
 
 .table__cell_theme_dark_end {
@@ -303,7 +341,7 @@
   width: 877px;
   height: 877px;
   background-image: url(../images/kaufman-triangle.svg);
-  background-size: auto;
+  background-size: contain;
   z-index: 2;
 }
 
@@ -329,27 +367,30 @@
   align-items: flex-start;
 }
 
-.footer__content_copyright {
+.footer__column_content_copyright {
   flex-basis: 711px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.footer__content_info {
-
-}
-
-.footer__content_social {
+.footer__column_content_info {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+}
+
+.footer__column_content_social {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   padding-left: 0;
 }
 
 .logo_place_footer {
   background-image: url(../images/logo_place_footer.svg);
   z-index: 3;
-  padding-right: 1px; /*добавление padding необходимо для корректного отображения изображения*/
+  width: 184px;
 }
 
 .footer__author {
@@ -361,12 +402,12 @@
 
 .footer__column-links {
   display: flex;
-  margin: 20px 0 16px;
+  margin: 20px 0 16px 0;
   flex-direction: column;
   padding-left: 0;
 }
 
-.footer__column_link {
+.footer__column-link {
   display: flex;
   align-items: center;
   color: #fff;
@@ -376,7 +417,7 @@
   text-decoration: none;
 }
 
-.footer__column_link:visited {
+.footer__column-link:visited {
   color: white;
 }
 
@@ -384,10 +425,10 @@
   margin: 0;
   line-height: 30px;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
-.footer__link-icon {
+.footer__social-icon {
   height: 16px;
   width: 16px;
   padding-right: 10px;
@@ -397,6 +438,6 @@
   margin: 0;
 }
 
-.footer_list-style-type_none {
+.footer__list-item {
   list-style-type: none;
 }
