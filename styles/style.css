@@ -133,7 +133,11 @@
 }
 
 .two-columns__span-accent {
+<<<<<<< HEAD
   font-weight: bold;
+=======
+  font-weight: 700;
+>>>>>>> f967d8e113eea62fccbbe3321843bc9675331e68
 }
 
 .digits {
