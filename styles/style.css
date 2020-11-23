@@ -294,15 +294,11 @@
 }
 
 .table__flex-row_theme_dark {
-
-}
-
-.table__cell {
-  width: 200px;
+  margin-top: 80px;
 }
 
 .table__cell_theme_dark {
-
+  width: 200px;
 }
 
 .table__cell:last-child {
