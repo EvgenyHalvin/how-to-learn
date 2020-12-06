@@ -1,0 +1,14 @@
+.kaufman {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #1f1f1f;
+  color: #fff;
+  overflow: ;
+  padding: 90px 0 90px;
+}

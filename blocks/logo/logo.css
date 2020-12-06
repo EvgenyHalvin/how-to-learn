@@ -1,0 +1,7 @@
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 183px;
+  height: 32px;
+}

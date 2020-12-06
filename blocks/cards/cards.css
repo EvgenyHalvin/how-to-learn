@@ -1,0 +1,20 @@
+.cards {
+	width: 920px;
+	margin: auto;
+	padding: 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
+	z-index: 3;
+} 
+
+/* Вендорные префикисы взял с сайта https://autoprefixer.github.io/ru/ */
