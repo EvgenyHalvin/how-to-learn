@@ -105,8 +105,5 @@
 /* Импорт стиля анимации вращения */
 @import url(../blocks/rotation/rotation.css);
 
-/* Импорт стиля прозрачности ссылок */
-@import url(../blocks/link/_opacity/link_opacity_low.css);
-
 /* Импорт стилей для стилизации списков */
 @import url(../blocks/list-item/list-item.css);
