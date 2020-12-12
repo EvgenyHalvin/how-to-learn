@@ -1,6 +1,4 @@
-'''html
-<h1>How-to-learn, project 2</h1>
-'''
+# How-to-learn, project 2
 
 
 **Коротко о содержимом:** 
